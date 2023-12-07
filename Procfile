@@ -1,1 +1,1 @@
-web: Kubeday
+web: kubeday
