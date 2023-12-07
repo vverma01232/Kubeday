@@ -2,6 +2,7 @@ package main
 
 import (
 	"encoding/base64"
+	"fmt"
 	"html/template"
 	"net/http"
 
@@ -127,5 +128,7 @@ func HomePageHandler(w http.ResponseWriter, r *http.Request) {
 
 func main() {
 	http.HandleFunc("/", HomePageHandler)
+	fmt.Println("server up and running on port 8080")
 	http.ListenAndServe(":8080", nil)
+	fmt.Println("server up and running on port 8080")
 }
