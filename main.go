@@ -129,6 +129,7 @@ func HomePageHandler(w http.ResponseWriter, r *http.Request) {
 func main() {
 	http.HandleFunc("/", HomePageHandler)
 	fmt.Println("server up and running on port 8080")
+	fmt.Println("Service started........")
 	http.ListenAndServe(":8080", nil)
 	fmt.Println("server up and running on port 8080")
 }
